@@ -4,15 +4,13 @@
 
 #Getopts-Case testing
 
-while getops a:i: flag
-do
-	case "$[flag]" in
+getopts ai flag
+	case ${flag} in
 		a) firstFlag=${OPTARG}
-			echo $firstFlag;;
+			echo "flag -a" ;;
 		i) secondFlag=${OPTARG}
-			echo $secondFlag;;
-		*) else=${OPTARG}
-			echo "Wrong argument!";;
+			echo "flag -i";;
+		?) else=${OPTARG}
+			echo "Wrong flag";;
 	esac
-done
 
