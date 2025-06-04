@@ -1,2 +1,2 @@
 # Git-Testing
-Repo for basic hands-on practise 
+Repo for basic hands-on practice 
